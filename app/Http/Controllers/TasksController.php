@@ -26,7 +26,7 @@ class TasksController extends Controller
     {
         $task->update($request->only("title", "description", "status", "user_id"));
 
-        return response()->json(new \App\Http\Resources\Task($task), 201);
+        return response()->json(new \App\Http\Resources\Task($task), 200);
     }
 
     public function delete(Task $task): JsonResponse

@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
@@ -56,5 +57,12 @@ class Handler extends ExceptionHandler
                 "error" => "Resource not found!"
             ], 404);
         }
+
+        if ($exception instanceof AuthorizationException) {
+            return response()->json([
+                "error" => "You can't perform this action!"
+            ], 403);
+        }
+
     }
 }

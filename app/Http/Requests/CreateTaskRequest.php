@@ -14,7 +14,7 @@ class CreateTaskRequest extends JsonRequest
      */
     public function authorize(): bool
     {
-        return true;
+        return auth()->user()->is_admin;
     }
 
     /**
