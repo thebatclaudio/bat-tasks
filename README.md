@@ -1,6 +1,6 @@
 ## Bat Tasks
 
-This is an example project created for my speech "PEST - Bring back the joy of testing in PHP" @ Tech & Beer #2 - 31 May 2023.
+This is an example project created for my speech ["PEST - Bring back the joy of testing in PHP" @ Tech & Beer #2 - 31 May 2023](https://speakerdeck.com/thebatclaudio/pest-bring-back-the-joy-of-testing-in-php).
 
 This is a fictional Batman management software API used to organize vigilantes tasks. 
 
